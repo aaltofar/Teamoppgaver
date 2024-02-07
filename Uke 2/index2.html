@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory-manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div onclick="addItemToInventory(this.innerHTML)" class="item">Hapå</div>
+      <div onclick="addItemToInventory(this.innerHTML)" class="item">Sigg</div>
+      <div onclick="addItemToInventory(this.innerHTML)" class="item">
+        Snurring
+      </div>
+      <div onclick="addItemToInventory(this.innerHTML)" class="item">
+        Dreamies
+      </div>
+      <div onclick="addItemToInventory(this.innerHTML)" class="item">
+        Seigmenn
+      </div>
+      <div onclick="addItemToInventory(this.innerHTML)" class="item">Joika</div>
+      <div onclick="addItemToInventory(this.innerHTML)" class="item">
+        Dinosaurkjeks
+      </div>
+    </div>
+
+    <button onclick="toggleInventory()">Toggle inventory</button>
+
+    <div id="inventory"></div>
+
+    <script>
+      let inv = document.getElementById("inventory");
+
+      function toggleInventory() {
+        inv.style.display == ""
+          ? (inv.style.display = "none")
+          : (inv.style.display = "");
+        // hvisDetteStemmer ? gjør dette : hvis ikke gjør dette
+        ("ternary operator");
+      }
+
+      function toggleInventory() {
+        if (document.getElementById("inventory").style.display == "none") {
+          document.getElementById("inventory").style.display = "";
+        } else {
+          document.getElementById("inventory").style.display = "none";
+        }
+      }
+
+      function addItemToInventory(item) {
+        inv.innerHTML += `<div class="item">${item}</div>`;
+      }
+    </script>
+  </body>
+</html>

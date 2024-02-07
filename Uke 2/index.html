@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory-manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div onclick="addHapaa()" class="item">Hapå</div>
+      <div onclick="addSigg()" class="item">Sigg</div>
+      <div onclick="addSnurring()" class="item">Snurring</div>
+      <div onclick="addDreamies()" class="item">Dreamies</div>
+      <div onclick="addSeigmenn()" class="item">Seigmenn</div>
+      <div onclick="addJoika()" class="item">Joika</div>
+    </div>
+
+    <button onclick="toggleInventory()">Toggle inventory</button>
+
+    <div id="inventory"></div>
+
+    <script>
+      let inv = document.getElementById("inventory");
+
+      function toggleInventory() {
+        if (document.getElementById("inventory").style.display == "none") {
+          document.getElementById("inventory").style.display = "";
+        } else {
+          document.getElementById("inventory").style.display = "none";
+        }
+      }
+
+      function addHapaa() {
+        // document.getElementById("inventory").innerHTML += "Hapå"
+        document.getElementById("inventory").innerHTML += /*HTML*/ `
+        <div class="item">Hapå</div>
+        `;
+      }
+
+      function addSigg() {
+        // document.getElementById("inventory").innerHTML += "Sigg"
+        document.getElementById("inventory").innerHTML += /*HTML*/ `
+        <div class="item">Sigg</div>
+        `;
+      }
+
+      function addSnurring() {
+        // document.getElementById("inventory").innerHTML += "Snurring"
+        document.getElementById("inventory").innerHTML += /*HTML*/ `
+        <div class="item">Snurring</div>
+        `;
+      }
+
+      function addDreamies() {
+        // document.getElementById("inventory").innerHTML += "Dreamies"
+        document.getElementById("inventory").innerHTML += /*HTML*/ `
+        <div class="item">Dreamies</div>
+        `;
+      }
+
+      function addSeigmenn() {
+        // document.getElementById("inventory").innerHTML += "Seigmenn"
+        document.getElementById("inventory").innerHTML += /*HTML*/ `
+        <div class="item">Seigmenn</div>
+        `;
+      }
+
+      function addJoika() {
+        // document.getElementById("inventory").innerHTML += "Joika"
+        document.getElementById("inventory").innerHTML += /*HTML*/ `
+        <div class="item">Joika</div>
+        `;
+      }
+    </script>
+  </body>
+</html>

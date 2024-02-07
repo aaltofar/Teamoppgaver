@@ -1,0 +1,48 @@
+body {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+}
+
+.item:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+#inventory {
+  border: 2px solid black;
+  height: auto;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input {
+  margin-top: 10%;
+}
+
+#app {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
